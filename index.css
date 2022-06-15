@@ -1,47 +1,109 @@
-*{
-    margin: 0px;
-    padding: 0px;
+:root{
+    --lightbg:#75c297;
+    --purple:#9000F0;
+    --orange:#F09800;
 }
-body{
-    background: #e2c9e4;
 
+*{
+    margin:0px;
+    padding:0px;
 }
-.logo{
-    display: flex;
-    justify-content: center;
+
+body{
+    background-color: var(--lightbg);
 }
-.logo img{
-    background: #000;
-    
-    margin: 1vh;
-    align-content: center center;
-    border: 0.5vw dotted;
-    border-color: #243d5e;
-    border-radius: 5px;
-    padding: 2vw;
-}
+
 .header{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50px;
-}
-.header-elements{
-    padding: 25px;
-    
-    border: #243d5e solid;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #270202;
-    font-size: 20px;
-}
-.header-elements a{
-    text-decoration: none;
+    width:100%;
+    overflow: hidden;
+    position: fixed;
 }
 .nav{
-    /* position: fixed; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--orange);
+    align-items: center center;
+    border-bottom: black solid 0.5vh;
+    border-top: black solid 0.25vh;
+}
+.nav-elements{
+    display: inline-flex;
+    
+
+}
+.nav-elements a:hover{
+    background-color: var(--lightbg);
+}
+.nav-elements a{
+    text-decoration: none;
+    text-align: center center;
+    font-size: 3vh;
+    padding:1.5vh;
+}
+a:visited{
+    color: black;
+}
+
+.home{
+    padding-top:5vh;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    padding-bottom: 25vh;
+}
+.home_text{
+    margin-top:5vh;
+    display: flex;
+    align-items:center;
+}
+.home-text{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    font-size: 3vh;
+}
+
+
+.info_photo{
+    display:flex;
+    justify-content: space-evenly;
+    background: var(--purple);
+    border:var(--lightbg) 1vh;
+    border-radius: 5vh;
+    margin:2vh;
+    padding:3vh;
+}
+.info{
+    text-align: center;
+    font-size: 2.25vh;
+    margin:3vh;
+}
+.name{
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.name h1{
+    font-size: 10vh;
+    width: 50vh;
+    background: var(--purple);
     display: block;
+    text-align: center;
+    border:var(--lightbg) 1vh;
+    border-radius: 5vh;
+    padding:3vh;
+}
+.photo{
+    border: 0.25vh solid black;
+    display: inline-block;
+    width:34vh;
+    margin:2vh;
+}
+#right{
+    text-align: right;
+}
+#left{
+    text-align: left;
 }
