@@ -6,27 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <img id="logo" src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-    <nav>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/project">Project</a>
-            </li>
-            <li>
-                <a href="/contact">Contact Me</a>
-            </li>
-            <li>
-                <a href="/about">About Us</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="logo">
+
+        <img  src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    </div>
+    <div>
+
+        <nav class="nav">
+            <div class="header" >
+                <div class="header-elements" style="border-left:none">
+                    <a href="#">Home</a>
+                </div>
+                <div class="header-elements">
+                    <a href="#project">Project</a>
+                </div>
+                <div class="header-elements">
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="header-elements" style="border-right:none">
+                    <a href="#about">About Us</a>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div>
         <header>
             <h1>
@@ -35,7 +41,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam ipsam tenetur vel mollitia non corrupti inventore, eaque, quas reiciendis maxime ipsa aliquam? Obcaecati provident nisi fuga tempore minima temporibus?</p>
         </header>
     </div>
-    <div>
+    <div id="project">
         <div>
             <h2>Python</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ullam reprehenderit nemo numquam eius odio? Temporibus quia, enim veritatis et esse asperiores ad qui sunt nemo animi ex saepe, ratione minima doloribus odit nihil dignissimos itaque quibusdam consequuntur accusantium tempora.</p>
