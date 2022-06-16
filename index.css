@@ -40,6 +40,7 @@ body{
     text-align: center center;
     font-size: 3vh;
     padding:1.5vh;
+    color: black;
 }
 a:visited{
     color: black;
@@ -80,9 +81,13 @@ a:visited{
     flex-direction: column;
     background: var(--purple);
     border:var(--lightbg) 1vh;
-    border-radius: 5vh;
-    margin:10vw;
-    padding:5vw;
+    border-radius: 3vh;
+    margin:15vw;
+    padding:10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
     text-align: center;
     font-size: 20px;
 }
@@ -128,6 +133,32 @@ a:visited{
     text-align: left;
 }
 
+.skills{
+    margin-bottom: 0vw;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+}
+.skill{
+    margin-top: 2vw;
+}
+.card{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1vw;
+    padding: 2vw;
+    background-color: var(--orange);
+    border:var(--lightbg) 1vh;
+    border-radius: 3vh;
+}
+
+.achievements{
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    margin-bottom: 0vw;
+}
+
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -137,4 +168,11 @@ a:visited{
 .contact{
     display:block;
     font-size: 20px;
+}
+.icons{
+    display:flex;
+}
+.icon{
+    margin:1vw;
+    padding:2vw;
 }
