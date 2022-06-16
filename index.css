@@ -62,7 +62,7 @@ a:visited{
     text-align: center;
 }
 .home_text{
-    margin-top:5vw;
+    margin-top:3vw;
     display: flex;
     justify-content: center;
 }
@@ -74,25 +74,36 @@ a:visited{
 }
 
 
-.info_photo{
+.info{
     display:flex;
     justify-content: space-evenly;
+    flex-direction: column;
     background: var(--purple);
     border:var(--lightbg) 1vh;
     border-radius: 5vh;
-    margin:2vh;
-    padding:3vh;
-}
-.info{
+    margin:10vw;
+    padding:5vw;
     text-align: center;
-    font-size: 2.25vh;
-    margin:3vh;
+    font-size: 20px;
+}
+
+.info2{
+    margin:3vw;
+    padding:5vw;
+}
+.dob{
+    font-size: 15px;
+    
+}
+.table{
+    display: block;
 }
 .name{
     
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: flex-start;
+    margin: 2vw;
+    padding: 2vw;
 }
 .name h1{
     font-size: 10vh;
@@ -115,4 +126,15 @@ a:visited{
 }
 #left{
     text-align: left;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background: var(--orange);
+    border-top: var(--purple) solid ;
+}
+.contact{
+    display:block;
+    font-size: 20px;
 }
