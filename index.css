@@ -1,7 +1,8 @@
 :root{
-    --lightbg:#75c297;
-    --purple:#9000F0;
-    --orange:#F09800;
+    --lightbg:#9befcb;
+    --purple:#b0455c;
+    --orange:#c9b34d;
+    --light: #c4ae48c8;
 }
 
 *{
@@ -26,11 +27,12 @@ body{
     align-items: center center;
     border-bottom: black solid 0.5vh;
     border-top: black solid 0.25vh;
+    
 }
 .nav-elements{
     display: inline-flex;
-    
-
+    border: black solid 0.25vh;
+    box-shadow: black 0.5vw 0.5vw 0.5vw 0.5vw ;
 }
 .nav-elements a:hover{
     background-color: var(--lightbg);
@@ -47,7 +49,7 @@ a:visited{
 }
 
 .home{
-    padding-top:5vh;
+    padding-top:6vh;
     display: flex;
     justify-content:space-between;
     flex-direction: row;
@@ -56,6 +58,7 @@ a:visited{
     background: var(--purple);
     border-bottom: var(--orange) solid 0.5vh;
     padding-bottom: 3vh;
+    width: 100vw;
 }
 .photos{
     display: flex;
@@ -89,7 +92,7 @@ a:visited{
     padding-top: 2vw;
     padding-bottom: 5vw;
     text-align: center;
-    font-size: 20px;
+    font-size: 4vw;
 }
 
 .info2{
@@ -97,7 +100,7 @@ a:visited{
     padding:5vw;
 }
 .dob{
-    font-size: 15px;
+    font-size: 3vw;
     
 }
 .table{
@@ -147,7 +150,7 @@ a:visited{
     flex-direction: column;
     margin: 1vw;
     padding: 2vw;
-    background-color: var(--orange);
+    background-color: var(--light);
     border:var(--lightbg) 1vh;
     border-radius: 3vh;
 }
@@ -175,4 +178,70 @@ a:visited{
 .icon{
     margin:1vw;
     padding:2vw;
+    display: flex;
+}
+.line-icon{
+    margin:1vw;
+    padding:2vw;
+}
+.icon-photo{
+    width:10vw;
+}
+.icon-photo2{
+    width:25vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .photo3{
+        display:none;
+        width:200vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .nav{
+        flex-direction: column;
+    }
+    .home{
+        padding-top:30vh;
+    }
+    .icons{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .info{
+        margin:10vw;
+        padding:10vw;
+    }
+    .contact{
+        font-size: 40px;
+    }
+    .icons{
+        font-size: 30px;
+    }
+    .card{
+        font-size: 25px;
+    }
+    .info{
+        font-size: 30px;
+    }
+    .dob{
+        font-size:25px ;
+    }
+    .info{
+        margin:3vw;
+        padding:3vw;
+    }
+    .skills{
+        margin-top: 10vw;
+    }
+    .achievements{
+        margin-top: 10vw;
+    }
+    .icon-photo{
+        width:8vw;
+    }
+    .icon-photo2{
+        width:20vw;
+    }
 }
